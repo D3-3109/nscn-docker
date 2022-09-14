@@ -1,0 +1,30 @@
+# Maintainer: pg9182 <96569817+pg9182@users.noreply.github.com>
+pkgname=northstarcn
+pkgver=1.9.5
+pkgver_tf=2.0.11.0
+pkgrel=0
+pkgdesc="Northstarcn binaries and mods"
+
+url="https://northstar.cool"
+license="MIT"
+
+arch="x86_64"
+source="https://github.com/D3-3109/i-need-a-repo-to-release-the-launchers/releases/download/v${pkgver}/v${pkgver}.zip"
+
+check() {
+	ls "$srcdir"
+	test -f "$srcdir/NorthstarLauncher.exe"
+	test -f "$srcdir/R2Northstar/mods/Northstar.CustomServers/mod/cfg/autoexec_ns_server.cfg"
+	test -f "$srcdir/bin/x64_dedi/d3d11.dll"
+}
+
+package() {
+	rm "$srcdir"/*.zip
+	rm -rf "$srcdir/bin/x64_retail"
+	mkdir -p "$pkgdir/usr/lib/northstar"
+	cp -r "$srcdir/." "$pkgdir/usr/lib/northstar/"
+}
+
+sha512sums="
+fc45b62811d0bcd816a886ba9e916fb24debaf325703c042b458d173df5c6928af153f8b729aeea70de4c5c07b89ba8a493163665a97bebdd1db8aa596569eda  v${pkgver}.zip
+"
