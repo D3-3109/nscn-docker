@@ -1,6 +1,6 @@
 # Maintainer: pg9182 <96569817+pg9182@users.noreply.github.com>
 pkgname=northstarcn
-pkgver=1.9.5
+pkgver=1.9.6
 pkgver_tf=2.0.11.0
 pkgrel=0
 pkgdesc="Northstarcn binaries and mods"
@@ -26,5 +26,5 @@ package() {
 }
 
 sha512sums="
-94ecf6f3d140e7e9bd1a8a6b6fdaa5314fa443b12932de2cd44b79141a1d9da4adeaae44649d8738c68be332836f9ddc4ad75b0aad9889855d68cd49364fcd9c  v${pkgver}.zip
+1ee99910029f455fefb361c66f2db3f011ea2415cf4eafba55f7b4cde21923deb83c2837c4aa42f2aa178d1350604ba5a673a603699bc26b7bc8a08eb2e08558  v${pkgver}.zip
 "
