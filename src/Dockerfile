@@ -68,6 +68,4 @@ RUN /usr/bin/nswrap-wineprefix && \
         orig="/usr/share/wine/nls/$(basename "$x")"; \
         if cmp -s "$orig" "$x"; then ln -sf "$orig" "$x"; fi; \
     done
-EXPOSE 8081/tcp
-EXPOSE 37015/udp
 ENTRYPOINT ["/usr/libexec/nsdedi"]
