@@ -1,5 +1,5 @@
 pkgname=northstarcn
-pkgver=1.10.13
+pkgver=0.0.1
 pkgver_tf=2.0.11.0
 pkgrel=0
 pkgdesc="Northstarcn binaries and mods"
@@ -25,5 +25,5 @@ package() {
 }
 
 sha512sums="
-c12702168121d3d91688f402c48db295d1877edb30276fe21c6f07805b290ea02e38d212c2f0a80f52b3463f58a91a41b0c972d61e5134cdb0a133ac936edb2c  v${pkgver}.zip
+63ca1049251573bfc506f01cc9513be29e79eb7ffef5fd16b735bd5b64cdb31fdf612b91bfe4b206ce6a6285f45dc6548c85acb75b85739fd2cd4a42d47b82d0  v${pkgver}.zip
 "
